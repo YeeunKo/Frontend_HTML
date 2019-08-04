@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>project info</title>
+        
+        <style>
+            .container { width: 450px;}
+
+            ul { list-style: none;}
+
+            li { 
+                margin: 10px 0 10px 0;
+                padding: 0;}
+
+            .title {
+                float: left;
+                text-align: left;
+                width: 120px;
+                padding-right: 3px;
+                font-weight: bold;
+            }
+            
+            .centered {
+                margin-top: 15px;
+            } 
+        </style>
+    </head>
+
+    <body>
+
+        <fieldset class="container">
+            <legend>프로젝트 정보</legend>
+            <ul>
+                <li>
+                    <label for="nm" class="title">이름</label>
+                    <input type="text" id="nm" required>
+                </li>
+                <li>
+                    <label for="importance" class="title">중요도</label>
+                    <input type="range" id="importance" required>
+                    <!-- internet explorer에서 range 형태가 막대 형태로 표현
+                         chrome에서는 실선 형태로 표현 -->
+                </li>
+                <li>
+                    <label for="expecttime" class="title">예상 시간</label>
+                    <input type="time" id="expecttime" required>
+                </li>
+                <li>
+                    <label for="startdate" class="title">시작 날짜</label>
+                    <input type="datetime" id="startdate" required>
+                </li>
+                <li>
+                    <label for="email" class="title">이메일</label>
+                    <input type="email" id="email" required>
+                </li>
+                <li>
+                    <label for="url" class="title">URL</label>
+                    <input type="url" id="url" required>
+                </li>
+                <li>
+                    <label for="search" class="title">검색</label>
+                    <input type="search" id="search" required>
+                </li>
+                <li>
+                    <input type="submit" class="centered" value="전송">
+                </li>
+            </ul>
+        </fieldset>
+
+    </body>
+    </html>
+        
