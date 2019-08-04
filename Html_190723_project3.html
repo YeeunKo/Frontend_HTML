@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>employee ID</title>      
+    </head>
+
+    <body>
+        <table border="1">
+            <colgroup>
+                <col style="width: 75px">
+                <col style="width: 200px">
+                <col style="width: 75px">
+                <col style="width: 200px">
+            </colgroup>
+            <tr>
+                <td>사번</td>
+                <td></td>
+                <td>이름</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>나이</td>
+                <td></td>
+                <td>성별</td>
+                <td><input type="radio" name="chk_info" value="남">남자
+                    <input type="radio" name="chk_info" value="여">여자
+                </td>
+            </tr>
+            <tr>
+                <td>최종학력</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>취미</td>
+                <td colspan="3"><input type="checkbox" name="chk_info2" value="sports">Sports
+                    <input type="checkbox" name="chk_info2" value="books">Books
+                    <input type="checkbox" name="chk_info2" value="dance">dance
+                </td>
+            </tr>
+            <tr>
+                <td>자기소개</td>
+                <td></td>
+            </tr>
+        </table>
+
+        <input type="submit" class="centered" value="쿼리 전송">
+        <input type="submit" class="centered" value="원래대로">
+
+    </body>
+    </html>
