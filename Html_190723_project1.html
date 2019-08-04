@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>project info</title>
+        
+        <style>
+            fieldset { width: 450px;}
+
+            ul { list-style: none;}
+
+            li { 
+                margin: 10px 0 10px 0;
+                padding: 0;}
+
+            li label {
+                float: left;
+                text-align: left;
+                width: 120px;
+                padding-right: 3px;
+                font-weight: bold;
+            }
+            
+            .centered {
+                margin-top: 15px;
+            } 
+        </style>
+    </head>
+
+    <body>
+
+        <fieldset>
+            <legend>프로젝트 정보</legend>
+            <ul>
+                <li>
+                    <label for="nm">이름</label>
+                    <input type="text" id="nm" required>
+                </li>
+                <li>
+                    <label for="importance">중요도</label>
+                    <input type="range" id="importance" required>
+                    <!-- internet explorer에서 range 형태가 막대 형태로 표현
+                         chrome에서는 실선 형태로 표현 -->
+                </li>
+                <li>
+                    <label for="expecttime">예상 시간</label>
+                    <input type="time" id="expecttime" required>
+                </li>
+                <li>
+                    <label for="startdate">시작 날짜</label>
+                    <input type="datetime" id="startdate" required>
+                </li>
+                <li>
+                    <label for="email">이메일</label>
+                    <input type="email" id="email" required>
+                </li>
+                <li>
+                    <label for="url">URL</label>
+                    <input type="url" id="url" required>
+                </li>
+                <li>
+                    <label for="search">검색</label>
+                    <input type="search" id="search" required>
+                </li>
+                <li>
+                    <input type="submit" class="centered" value="전송">
+                </li>
+            </ul>
+        </fieldset>
+
+    </body>
+    </html>
+        
